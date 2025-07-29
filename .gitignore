@@ -33,6 +33,40 @@ bld/
 [Ll]og/
 [Ll]ogs/
 
+# Set default behavior for line endings (canonical LF, convert to OS native on checkout)
+* text=auto eol=lf
+
+# Binary assets (Git should not touch these)
+*.unity binary
+*.prefab binary
+*.asset binary
+*.meta binary
+*.controller binary
+*.mask binary
+*.mixer binary
+*.inputactions binary
+*.lighting binary
+*.obj binary
+*.mtl binary
+*.fbx binary # Crucial for your oyster-home.fbx
+# Add other large/binary asset types that aren't text-based (if applicable)
+# *.png binary
+# *.jpg binary
+# *.ogg binary
+# *.wav binary
+# *.mp4 binary
+# *.blend binary
+
+# Force text files to use LF line endings in the repository
+*.cs text eol=lf
+*.js text eol=lf
+*.shader text eol=lf
+*.txt text eol=lf
+*.md text eol=lf
+*.vsconfig text eol=lf # For your .vsconfig file warning
+.gitignore text eol=lf # To fix the .gitignore line ending warning itself
+.gitattributes text eol=lf # To fix the .gitattributes line ending warning
+
 # Visual Studio 2015/2017 cache/options directory
 .vs/
 # Uncomment if you have tasks that create the project's static files in wwwroot
@@ -54,6 +88,17 @@ nunit-*.xml
 [Dd]ebugPS/
 [Rr]eleasePS/
 dlldata.c
+
+# Unity generated
+/[Ll]ibrary/    # Ignores Library, which contains libburst-llvm-19.dylib and PackageCache files
+/[Tt]emp/      # Ignores Temp folder, preventing permission errors
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/Assets/AssetStoreTools/
+
+# Plastic SCM files (add this manually if the template doesn't have it)
+.plastic/
 
 # Benchmark Results
 BenchmarkDotNet.Artifacts/
@@ -97,6 +142,7 @@ StyleCopReport.xml
 *.pidb
 *.svclog
 *.scc
+*.cs
 
 # Chutzpah Test files
 _Chutzpah*
@@ -361,3 +407,45 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+# Set default behavior for line endings (canonical LF, convert to OS native on checkout)
+* text=auto eol=lf
+
+# Binary assets (Git should not touch these)
+*.unity binary
+*.prefab binary
+*.asset binary
+*.meta binary
+*.controller binary
+*.mask binary
+*.mixer binary
+*.inputactions binary
+*.lighting binary
+*.obj binary
+*.mtl binary
+*.Tt binary 
+*.XML binary
+*.config binary
+*.gitattributes binary
+*.attributes binary
+
+
+*.fbx binary # Crucial for your oyster-home.fbx
+# Add other large/binary asset types that aren't text-based (if applicable)
+# *.png binary
+# *.jpg binary
+# *.ogg binary
+# *.wav binary
+# *.mp4 binary
+# *.blend binary
+
+
+# Force text files to use LF line endings in the repository
+*.cs text eol=lf
+*.js text eol=lf
+*.shader text eol=lf
+*.txt text eol=lf
+*.md text eol=lf
+*.vsconfig text eol=lf # For your .vsconfig file warning
+.gitignore text eol=lf # To fix the .gitignore line ending warning itself
+.gitattributes text eol=lf # To fix the .gitattributes line ending warning

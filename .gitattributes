@@ -61,3 +61,77 @@
 #*.PDF   diff=astextplain
 #*.rtf   diff=astextplain
 #*.RTF   diff=astextplain
+
+# Set default behavior for line endings (canonical LF, convert to OS native on checkout)
+* text=auto eol=lf
+
+# Binary assets (Git should not touch these)
+*.unity binary
+*.prefab binary
+*.asset binary      
+*.meta binary
+*.controller binary 
+*.mask binary       
+*.mixer binary       
+*.inputactions binary 
+*.lighting binary
+*.obj binary
+*.mtl binary
+*.fbx binary
+*.mat binary     
+*.blend binary
+*.anim binary        
+*.unity3d binary     
+*.assetbundle binary
+*.dll binary         
+*.exe binary        
+*.pdb binary        
+*.so binary          
+*.dylib binary       
+*.wasm binary       
+*.json binary       
+*.wav binary         
+*.ogg binary        
+*.mp4 binary         
+*.mp3 binary         
+*.zip binary         
+*.tar binary        
+*.gz binary         
+*.7z binary        
+*.unitypackage binary 
+*.apk binary         
+*.xcodeproj binary  
+*.sln binary        
+*.csproj binary     
+*.vscode binary     
+*.vs binary         
+*.suo binary         
+*.user binary       
+*.scc binary        
+*.pdb binary         
+*.dll.mdb binary   
+*.mdb binary        
+*.mat binary
+
+*.png binary
+*.jpg binary
+*.ogg binary
+*.wav binary
+*.mp4 binary
+*.blend binary
+*.tt binary
+*.config binary
+*.xml binary
+*.asmdef binary
+*.gitattributes	binary
+*.wlt binary
+*.gitignore binary
+# Force true text files to use LF line endings in the repository
+*.cs text eol=lf
+*.js text eol=lf
+*.shader text eol=lf 
+*.txt text eol=lf    
+*.md text eol=lf
+*.vsconfig text eol=lf
+*.gitignore text eol=lf
+*.gitattributes text eol=lf
