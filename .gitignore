@@ -40,7 +40,6 @@ bld/
 *.unity binary
 *.prefab binary
 *.asset binary
-*.meta binary
 *.controller binary
 *.mask binary
 *.mixer binary
