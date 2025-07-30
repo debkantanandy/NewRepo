@@ -47,14 +47,19 @@ bld/
 *.lighting binary
 *.obj binary
 *.mtl binary
+*.json binary 
+*.traceevents binary
 *.fbx binary # Crucial for your oyster-home.fbx
 # Add other large/binary asset types that aren't text-based (if applicable)
-# *.png binary
-# *.jpg binary
-# *.ogg binary
-# *.wav binary
-# *.mp4 binary
-# *.blend binary
+ *.png binary
+ *.jpg binary
+ *.ogg binary
+ *.wav binary
+ *.mp4 binary
+ *.blend binary
+*.dll binary 
+*.bhc binary 
+
 
 # Force text files to use LF line endings in the repository
 *.cs text eol=lf
@@ -414,7 +419,6 @@ FodyWeavers.xsd
 *.unity binary
 *.prefab binary
 *.asset binary
-*.meta binary
 *.controller binary
 *.mask binary
 *.mixer binary
@@ -427,6 +431,18 @@ FodyWeavers.xsd
 *.config binary
 *.gitattributes binary
 *.attributes binary
+*.assets binary
+*.asset binary 
+*.json binary
+*.traceevents binary
+*.unitypackage binary
+*.dll binary
+*.bhc binary
+*.exe binary
+# Unity generated files
+Library/
+Temp/
+Builds/
 
 
 *.fbx binary # Crucial for your oyster-home.fbx
